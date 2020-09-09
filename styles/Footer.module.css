@@ -108,7 +108,13 @@
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 900px) {
+  .mediasContainer {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .footerContainer {
     width: 100%;
   }
@@ -127,6 +133,11 @@
   }
 
   .floatingContainer {
-    top: -60%;
+    top: -40%;
+    width: calc(100% - 24px);
+  }
+
+  .mediasContainer {
+    flex-direction: row;
   }
 }
