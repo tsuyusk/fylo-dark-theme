@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start -p $PORT"
   },
+  "engines": {
+    "node": "12.18.3"
+  },
   "dependencies": {
     "next": "9.5.3",
     "react": "16.13.1",
