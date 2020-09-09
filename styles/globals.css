@@ -11,6 +11,15 @@ body {
   height: 100vh;
 }
 
+a.blue {
+  color: #81d9d4 !important;
+  transition: color 0.3s ease;
+}
+
+a.blue:hover {
+  color: #6cb8b3 !important;
+}
+
 h1,
 h2,
 h3,

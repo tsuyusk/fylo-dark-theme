@@ -11,17 +11,6 @@
   align-items: center;
 }
 
-.customButton {
-  min-width: 160px;
-  font-size: 15px;
-  border: 0;
-  padding: 12px 64px;
-  border-radius: 25px;
-  font-weight: 700;
-  background: linear-gradient(45deg, #81d9d4, #339ecc);
-  color: #fff;
-}
-
 .heroContainer {
   display: flex;
   flex-direction: column;
@@ -55,9 +44,11 @@
   justify-content: center;
   align-items: center;
   color: #fff;
+  border-radius: 8px;
+  transition: background 0.5s ease;
 }
 
-.goodPoint > strong {
+.goodPoint > h4 {
   margin: 16px 0 8px;
 }
 
@@ -101,6 +92,10 @@
 .stayProductiveMessage > a > img {
   margin-left: 8px;
   object-fit: contain;
+  transition: margin-left 0.4s ease;
+}
+.stayProductiveMessage > a:hover > img {
+  margin-left: 12px;
 }
 
 .stayProductiveMessage > a::before {
@@ -134,10 +129,22 @@
   position: absolute;
   height: 56px;
   width: 56px;
-  color: #81d9d4;
   background: url("/bg-quotes.png") no-repeat;
   top: -36px;
   left: -16px;
+  z-index: 1;
+}
+
+.testimonials::after {
+  content: "";
+  position: absolute;
+  height: 56px;
+  width: 56px;
+  background: url("/bg-quotes.png") no-repeat;
+  bottom: -36px;
+  right: -36px;
+  transform: scaleX(-1);
+  z-index: 1;
 }
 
 .testimonialContainer {
@@ -149,7 +156,7 @@
   border-radius: 8px;
   color: #fff;
   background: #21293c;
-  z-index: 0;
+  z-index: 2;
 }
 
 .testimonialContainer > p {

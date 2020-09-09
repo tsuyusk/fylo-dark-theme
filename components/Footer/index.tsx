@@ -31,44 +31,52 @@ const Footer: React.FC<FooterProps> = ({ floatingContent }) => {
             </div>
             <div className={styles.footerItemContent}>
               <img src="/icon-email.svg" alt="email" />
-              <p>example@fylo.com</p>
+              <a className="blue" href="mailto:example@fylo.com">
+                example@fylo.com
+              </a>
             </div>
           </div>
           <div className={styles.footerItem}>
             <div className={styles.footerItemContent}>
-              <p>About us</p>
+              <a href="#">About us</a>
             </div>
             <div className={styles.footerItemContent}>
-              <p>Jobs</p>
+              <a href="#">Jobs</a>
             </div>
             <div className={styles.footerItemContent}>
-              <p>Press</p>
+              <a href="#">aress</a>
             </div>
             <div className={styles.footerItemContent}>
-              <p>Blog</p>
+              <a href="#">Blog</a>
             </div>
           </div>
           <div className={styles.footerItem}>
             <div className={styles.footerItemContent}>
-              <p>Contact Us</p>
+              <a href="#">Contact Us</a>
             </div>
             <div className={styles.footerItemContent}>
-              <p>Terms</p>
+              <a href="#">Terms</a>
             </div>
             <div className={styles.footerItemContent}>
-              <p>Privacy</p>
+              <a href="#">privacy</a>
             </div>
           </div>
           <div className={styles.footerItem}>
             <div className={styles.mediasContainer}>
               <div className={styles.media}>
-                <img src="icon-facebook.svg" alt="facebook" />
+                <a>
+                  <img src="icon-facebook.svg" alt="facebook" />
+                </a>
               </div>
               <div className={styles.media}>
-                <img src="icon-twitter.svg" alt="twitter" />
+                <a>
+                  <img src="icon-twitter.svg" alt="twitter" />
+                </a>
               </div>
               <div className={styles.media}>
-                <img src="icon-instagram.svg" alt="instagram" />
+                <a>
+                  <img src="icon-instagram.svg" alt="instagram" />
+                </a>
               </div>
             </div>
           </div>

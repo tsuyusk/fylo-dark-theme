@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import styles from "../styles/Home.module.css";
 import Header from "../components/Header";
+import Button from "../components/Button";
 import Footer from "../components/Footer";
 
 const Home: React.FC = () => {
@@ -28,15 +29,13 @@ const Home: React.FC = () => {
               Access them wherever you need, share and collaborate with friends
               family, and co-workers
             </p>
-            <button className={styles.customButton} type="button">
-              Get started
-            </button>
+            <Button>Get started</Button>
             <br />
           </section>
           <section className={styles.goodPoints}>
             <div className={styles.goodPoint}>
               <img src="/icon-access-anywhere.svg" alt="Phone and computer" />
-              <strong>Access your files, anywhere</strong>
+              <h4>Access your files, anywhere</h4>
               <p>
                 The ability to use a smartphone, tablet, or computer to access
                 your account means your files follow you everywhere.
@@ -44,7 +43,7 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.goodPoint}>
               <img src="/icon-security.svg" alt="Shield" />
-              <strong>Security you can trust</strong>
+              <h4>Security you can trust</h4>
               <p>
                 2 factor authentication and user-controlled encryption are just
                 a couple of the security features we allow to help secure your
@@ -56,7 +55,7 @@ const Home: React.FC = () => {
                 src="/icon-collaboration.svg"
                 alt="People and a check icon"
               />
-              <strong>Real-time collaboration</strong>
+              <h4>Real-time collaboration</h4>
               <p>
                 Securely share files and folders with friends, family and
                 colleagues for live collaboration. No email attachments
@@ -65,7 +64,7 @@ const Home: React.FC = () => {
             </div>
             <div className={styles.goodPoint}>
               <img src="/icon-any-file.svg" alt="Folder and files" />
-              <strong>Store any kind of file</strong>
+              <h4>Store any kind of file</h4>
               <p>
                 Whether you're sharing holiday photos or work documents, Fylo
                 has you covered allowing for all file types to be securely
@@ -154,10 +153,8 @@ const Home: React.FC = () => {
                 would be happy to help you.
               </p>
               <div className={styles.inputAndButton}>
-                <input placeholder="email@example.com" type="text" />
-                <button className={styles.customButton}>
-                  Get started for free
-                </button>
+                <input placeholder="email@example.com" type="email" />
+                <Button>Get started for free</Button>
               </div>
             </div>
           }

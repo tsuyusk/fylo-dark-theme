@@ -1,0 +1,15 @@
+.customButton {
+  min-width: 160px;
+  font-size: 15px;
+  border: 0;
+  padding: 12px 64px;
+  border-radius: 25px;
+  font-weight: 700;
+  background: linear-gradient(45deg, #81d9d4, #339ecc);
+  color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.customButton:hover {
+  box-shadow: 0 0 8px #81d9d4;
+}
